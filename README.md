@@ -5,6 +5,23 @@ The goal here is to
 
 ### TL:DR - Quick Assignment Goals
 
+***Designer***
+```
+<RichTextBox Margin="247,129,247,158">
+    <FlowDocument>
+        <Paragraph>
+            <Run x:Name="rtbDisplay" Text="Give Run a Name"/>
+        </Paragraph>
+    </FlowDocument>
+</RichTextBox>
+```
+
+***Code***
+```
+    Get : string variable = rtbDisplay.Text;
+    Set : rtbDisplay.Text = "Change the text;
+```
+
 > **Part 1** - Display Text
 > 1. Create a new wpf project, name it GA_***YourName***_RTB
 > 2. Add a Rich Text Box and give the `Run` a name.
