@@ -6,7 +6,29 @@
         xmlns:local="clr-namespace:GA_Prog_2_RichTextBox"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <Canvas>
+        <RichTextBox Height="414" Width="314" Canvas.Left="476" Canvas.Top="10" HorizontalAlignment="Left" VerticalAlignment="Center">
+            <FlowDocument>
+                <Paragraph>
+                    <Run x:Name="rtbDisplay" />
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <Label Content="Type A Message" Canvas.Left="34" Canvas.Top="41"/>
+        <TextBox x:Name="txtSingleMessageDisplay" Canvas.Left="135" TextWrapping="Wrap" Canvas.Top="46" Width="130" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <Button x:Name="btnDisplay" Content="Display" Canvas.Left="286" Canvas.Top="44" HorizontalAlignment="Left" VerticalAlignment="Top" Width="132" Click="btnDisplay_Click"/>
+        <Label Content="Message To Append" Canvas.Left="83" Canvas.Top="137" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <TextBox x:Name="txtAppendMessage" Canvas.Left="48" TextWrapping="Wrap" Canvas.Top="163" Width="217" HorizontalAlignment="Left" VerticalAlignment="Center" RenderTransformOrigin="0.274,3.421"/>
+        <Button x:Name="btnAppend" Content="Append" Canvas.Left="286" Canvas.Top="153" Width="132" HorizontalAlignment="Center" VerticalAlignment="Top" Click="btnAppend_Click"/>
+        <Button x:Name="btnAppendRTB" Content="Append Long Message" Canvas.Left="286" Canvas.Top="270" Width="132" HorizontalAlignment="Left" VerticalAlignment="Center" Click="btnAppendRTB_Click"/>
+        <Button x:Name="btnClear" Content="Clear" Canvas.Left="34" Canvas.Top="388" Width="384" HorizontalAlignment="Left" VerticalAlignment="Center" Click="btnClear_Click"/>
+        <RichTextBox Height="150" Width="217" Canvas.Left="48" Canvas.Top="205" HorizontalAlignment="Left" VerticalAlignment="Center">
+            <FlowDocument>
+                <Paragraph>
+                    <Run x:Name="rtbAppendMessage" />
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
 
-    </Grid>
+    </Canvas>
 </Window>
