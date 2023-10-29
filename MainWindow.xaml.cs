@@ -49,9 +49,9 @@ namespace GA_Prog_2_RichTextBox
         }
 
         // Part 3 - Append from a Rich Text Box
-        private void btnAppendRTB_Click(object sender, RoutedEventArgs e)
+        private void btnAppendNewRtb_Click(object sender, RoutedEventArgs e)
         {
-            string fullMessage = rtbAppendMessage.Text;
+            string fullMessage = rtbNewRtb.Text;
 
             rtbDisplay.Text += "\n" + fullMessage;
         }
@@ -59,9 +59,11 @@ namespace GA_Prog_2_RichTextBox
         // Part 4 - Clears Boxes
         private void btnClear_Click(object sender, RoutedEventArgs e)
         {
-            rtbAppendMessage.Text = "";
+            rtbNewRtb.Text = "";
             rtbDisplay.Text = "";
         }
+
+  
     } // class
 
 } // namespace
